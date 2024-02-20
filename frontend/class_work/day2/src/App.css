@@ -1,0 +1,10 @@
+.nav-link{
+  border-radius: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.nav-link:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+}
