@@ -1,0 +1,23 @@
+.landing-vid-text{
+    border-radius: 0px 5px 5px 0px;
+    padding: 2%;
+    margin-top:7%;
+    width:fit-content;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-family: "Parisienne", cursive;
+}
+.landing-div-button{
+    padding:15px;
+    font-family:sans-serif;
+    border-radius:5px;
+    color: white;
+    background:transparent;
+    border:1px solid white
+}
+.landing-div-button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    transition:.2s ease-in-out; 
+}
