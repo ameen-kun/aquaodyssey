@@ -9,9 +9,14 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { Person4Outlined } from "@mui/icons-material";
 import {Button} from "react-bootstrap";
 import AdminNavbar from "../../components/AdminNavbar";
+import SignUp from "../../components/SignUp";
 
 function AdminProfile() {
+	const [showSignUp, setShowSignUp] = useState(false);
+	const handleCloseSignUp = () => setShowSignUp(false);
+	const handleShowSignUp = () => setShowSignUp(true);
 	const fadeRefs = useRef([]);
+
 
 	useEffect(() => {
 
@@ -176,6 +181,23 @@ function AdminProfile() {
                         <Button className="m-2" variant="outline-light" type="submit">Save</Button>
                         }
 					</Form>
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<div ref={(el) => fadeRefs.current.push(el)} className="text-white rounded p-3 w-75 fade-item">
+					<h2 style={{ fontFamily: "Parisienne" }} >Create Admin Account</h2>
+					<hr />
+					<Button variant="outline-light" className="m-3" onClick={handleShowSignUp}>Create!</Button>
+				<SignUp
+				enableSwitch={false}
+				show={showSignUp}
+				handleClose={handleCloseSignUp}
+				role="Admin"
+				/>
 				</div>
 				<br />
 				<br />
